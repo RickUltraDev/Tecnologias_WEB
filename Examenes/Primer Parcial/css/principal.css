@@ -1,0 +1,73 @@
+body {}
+
+header {
+    background-color: gray;
+    color: white;
+    height: 95px;
+
+}
+
+.nav-item {
+    padding-right: 5px;
+
+}
+
+.dropdown-menu {
+    border-radius: 5px;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+    background-color: rgba(150, 150, 150, 0.65);
+}
+
+.dropdown .dropdown-item:hover,
+.dropdown .dropdown-item:active {
+    background-color: rgba(79, 157, 166, 0.87);
+}
+
+#sign{
+    text-decoration: none; 
+    color: white;
+}
+
+#Quote{
+    color: rgba(79, 157, 166, 0.87);
+}
+
+
+.medioA {
+    background-color: rgba(79, 157, 166, 0.87);
+}
+
+.medioB {
+    background-color: rgba(35, 49, 66, 0.87);
+    color: white;
+}
+
+.medioC1{
+    
+}
+.medioC2{
+    
+}
+
+footer {
+    background-color: rgba(35, 49, 66, 0.67);
+    color: white;
+}
+
+footer p {
+    font-size: 0.7rem;
+    margin-bottom: 4px;
+}
+
+#priv{
+    text-decoration: none; 
+    color: white;
+}
+
+
+
+
+

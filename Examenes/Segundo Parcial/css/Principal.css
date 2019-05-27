@@ -1,0 +1,121 @@
+body {
+    background-image: url("../src/BackGris.jpg");
+
+}
+
+
+header {
+    /* The image used */
+    background-image: url("../src/Fondo.jpg");
+
+    /* Full height */
+    height: 50%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.navbar {
+    min-height: 70px;
+}
+
+#frame {
+    border-radius: 40px;
+}
+
+#botonOrden {
+    font-size: 0.9rem;
+}
+
+/* Pagina Contacto */
+#fondoContact {
+    background-color: rgba(240, 241, 243, 0.65);
+}
+
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 95%;
+    position: absolute;
+}
+
+/*Comprobación de input en contact */
+
+/*Invalido */
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
+    border: 1px solid rgb(239,55,65);
+}
+
+/* valido */
+input.ng-valid.ng-touched, textarea.ng-valid.ng-touched{
+    border: 1px solid rgb(45, 164, 1);
+}
+
+small{
+    color: red; 
+    display: block; 
+    text-align: center;
+}
+
+#descrip{
+    color: gray;
+}
+
+.precio{
+    font:italic bold;
+    font-size: 1.05rem;
+    color: black;
+}
+
+#Parrafo1{
+    font-size: 0.97rem;
+}
+
+#instruccion{
+    color: gray;
+    font-family: monospace;
+    font-size: 0.95rem;
+}
+
+
+footer {
+    background-color: rgb(52, 58, 64);
+    color: white;
+}
+
+ul,li {
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.tituloList {
+    font-size: 0.9rem;
+
+}
+
+.ElementList {
+    font-size: 0.90rem;
+}
+
+.copyright,
+.restric {
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.restric {
+    color: white;
+}

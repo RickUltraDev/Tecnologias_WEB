@@ -1,0 +1,11 @@
+Background image
+
+background-image: url("../src/PizzaHu.jpg");
+background-image: url("https://pizzahutmx.vteximg.com.br/arquivos/1548x226_HERO_DESKTOP.jpg");
+
+Juego para cuando no funcione online
+
+https://apps.thecodepost.org/trex/trex.html
+
+src="https://www.youtube.com/embed/9pDleIHaz5s"  //video pizza
+

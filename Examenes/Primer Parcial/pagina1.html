@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="initial-scale=1" charset="utf-8">
+    <title>BORDERLESS | Prueba Interactiva</title>
+    <link rel="shortcut icon" href="src/IconoWEBP.ico">
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/pagina1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="js/dragdrop.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-lg-6">
+                    <a href="index.html">
+                        <img style="width:200px" class="img-fluid" src="src/LogoSitio.png" alt="error-logo">
+                    </a>
+
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-6">
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- barra de navegacion-->
+
+    <nav class="navbar navbar-expand-lg navbar-toggleable-md navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="index.html">HOME</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto ml-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Planteles</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Test de Exámenes
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Preparacion Interactiva (TOEFL)</a>
+                            <a class="dropdown-item" href="#">Preparacion Avanzada (TOEFL)</a>
+                            <a class="dropdown-item" href="#">Preparacion Interactiva (TOEIC)</a>
+                            <a class="dropdown-item" href="#">Preparacion Avanzada (TOEIC)</a>
+                            <a class="dropdown-item" href="#">Guia ilustrada (KIDS)</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Exámenes certificación
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">TOEFL</a>
+                            <a class="dropdown-item" href="#">TOEIC</a>
+                            <a class="dropdown-item" href="#">KIDS</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Simuladores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de</a>
+                    </li>
+                </ul>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <a href="https://twitter.com/Rick_Mk_" class="btn btn-outline-info mr-2"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/FacebookforDevelopers" class="btn btn-outline-info mr-2"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.youtube.com/watch?v=avM_UsVo0IA" class="btn btn-outline-danger mr-2"><i class="fab fa-youtube"></i></a>
+                    <button type="button" class="btn btn-info"><a href="login.html" id="sign">Login</a></button>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- drag and drop game-->
+
+
+    <section class="container-fluid" id="contInt">
+        <br><br>
+        <h2 class="text-center">Drag the image where it belongs</h2>
+        <h5 class="text-center">*Arrastra la imagen donde pertenece*</h5>
+        <br>
+        <br>
+        <div id="cajaimagenes" class="row">
+            <section class="col-12 col-md-2"><img src="src/bombero2.png" alt="" id="cajaimagen" class="img-fluid img-thumbnail" draggable="true"></section>
+            <section class="col-12 col-md-2"><img src="src/constructor2.png" alt="" id="cajaimagen" class="img-fluid img-thumbnail" draggable="true"></section>
+            <section class=" col-12 col-md-2"><img src="src/doctora2.png" alt="" id="cajaimagen" class="img-fluid img-thumbnail" draggable="true"></section>
+            <section class="col-12 col-md-2"><img src="src/mesero2.png" alt="" id="cajaimagen" class="img-fluid img-thumbnail" draggable="true"></section>
+            <section class="col-12 col-md-2"><img src="src/officeman2.png" alt="" id="cajaimagen" class="img-fluid img-thumbnail" draggable="true"></section>
+            <section class="col-12 col-md-2"><img src="src/policia2.png" alt="" id="cajaimagen" class="img-fluid img-thumbnail" draggable="true"></section>
+        </div>
+        <br>
+        <div class="row">
+            <section class="col-md-4 offset-md-4 mt-4 color8 text-center" id="cajasoltar">
+                <h3>FIREFIGHTER</h3>
+            </section>
+        </div>
+
+        <br><br><br><br>
+
+    </section>
+
+
+    <!--Paginacion-->
+    <nav class="col-sm-4 col-md-4 offset-md-5 mt-4">
+        <ul class="pagination pagination-sm">
+            <li class="page-item disabled">
+                <a class="page-link" href="#!" tabindex="-1">Previa</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="pagina1.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="pagina2.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="#!">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="pagina2.html">Siguiente</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <footer class="container-fluid">
+        <br>
+        <div class="row">
+
+            <div class="col-xs-4 text-center col-md-6">
+                <p>Todos los derechos reservados © Borderless 2019</p>
+                <p><a href="#" id="priv">Aviso de Privacidad / Aviso Legal</a></p>
+            </div>
+            <div class="col-md-6 text-center">
+                <p>Centro de información Cd. de México 500 500 50</p>
+                <p><a href="#" id="priv">Línea de atención al cliente 01 800 1 INGLÉS (464537)
+                    </a></p>
+            </div>
+
+
+        </div>
+        <br>
+    </footer>
+
+
+</body>
+
+<!-- Bootstrap librerias-->
+<!--css-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!--js / jquery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</html>

@@ -1,0 +1,14 @@
+function iniciar() {
+    var boton = document.getElementById('grabar');
+    boton.addEventListener('click', nuevoitem, false);
+}
+
+function nuevoitem() {
+    var clave = document.getElementById('clave').value;
+    var valor = document.getElementById('texto').value;
+    localStorage.setItem(clave, valor);
+    document.getElementById('clave').value = '';
+    document.getElementById('texto').value = '';
+}
+
+window.addEventListener('load', iniciar, false)

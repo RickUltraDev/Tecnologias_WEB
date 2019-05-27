@@ -1,0 +1,104 @@
+<hr>
+<div class="container" id="fondoContact">
+    <div class="row">
+        <br>
+        <div class="col-12 col-md-5 col-lg-5" id="iframe">
+            <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 600px">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3342.528056005107!2d-96.79952858518543!3d33.09519868087704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c3ce0d7454969%3A0x74f8b8a8f3028013!2sPizza+Hut!5e0!3m2!1ses-419!2smx!4v1555227431703!5m2!1ses-419!2smx" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col-12 col-md-7 col-lg-7">
+            <br>
+            <h2 class="featurette-heading text-center">Contáctanos </h2>
+            <hr>
+            <br>
+            <form name="formularioConta" action="#" method="" novalidate>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <input type="text" class="form-control" id="name" name="nombref" ng-model="contacto.nombre" placeholder="*Nombre(s)" ng-required="true">
+                        <div ng-show="formularioConta.nombref.$touched && formularioConta.nombref.$invalid">
+                            <small>Ingresa un nombre valido.</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <input type="number" class="form-control" id="phone" name="telefonof" ng-model="contacto.telefono" placeholder="*Telefono/Celular" min="-999" max="9999999999" ng-required="true">
+                        <div ng-show="formularioConta.telefonof.$touched && formularioConta.telefonof.$invalid">
+                            <small>Ingresa un teléfono valido.</small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <input type="email" class="form-control" id="mail" name="correof" ng-model="contacto.correo" placeholder="*Email" ng-required="true">
+                        <div ng-show="formularioConta.correof.$touched && formularioConta.correof.$invalid">
+                            <small>Ingresa un correo valido.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ml-2">
+                    <div class="col-md-6 form-check">
+                        <input class="form-check-input" type="radio" name="generof" id="exampleRadios1" value="Hombre" ng-model="contacto.genero" ng-required="true">
+                        <label class="text-muted form-check-label" for="exampleRadios1">
+                            Hombre
+                        </label>
+                    </div>
+                    <div class="col-md-6 form-check">
+                        <input class="form-check-input" type="radio" name="generof" id="exampleRadios2" value="Mujer" ng-model="contacto.genero" required ng-required="true">
+                        <label class="text-muted form-check-label" for="exampleRadios2">
+                            Mujer
+                        </label>
+                    </div>
+                     <div ng-show="formularioConta.generof.$untouched && formularioConta.generof.$invalid">
+                    <small class="text-center" style="color: gray; font-size: 0.7rem;">Marca una casilla.</small>
+                </div>
+                </div>
+               
+                <br>
+                <div class="row">
+                    <div class="col-md-8 form-group">
+                        <input type="text" class="form-control" id="subject" name="asuntof" ng-model="contacto.asunto" placeholder="*Asunto" ng-required="true">
+                        <div ng-show="formularioConta.asuntof.$touched && formularioConta.asuntof.$invalid">
+                            <small>Ingresa un titulo.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <label class="text-muted">Comentarios/Sugerencias:</label>
+                        <textarea class="form-control" rows="5" id="comment" name="comentariof" ng-model="contacto.texto" ng-required="true">
+                        </textarea>
+                        <div ng-show="formularioConta.comentariof.$touched && formularioConta.comentariof.$invalid">
+                            <small>Ingresa un comentario/sugerencia.</small>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-outline-danger" id="botonOrden" ng-disabled="formularioConta.$invalid" ng-click="enviar()" cursor:pointer>Enviar</button>
+
+                <small style="color: gray">Mostrar datos ingresados <input type="checkbox" ng-model="myVar"></small>
+                <br>
+                <div ng-show="myVar">
+                    <div class="col-md-6">
+                        <h2 class="featurette-heading text-center mb-2">Datos </h2>
+                        <p class="lead text-left">Nombre: {{" "+contacto.nombre | lowercase}}</p>
+                        <p class="lead text-left">Sexo: {{" "+contacto.genero | lowercase}}</p>
+                        <p class="lead text-left">Telefono: {{" "+contacto.telefono | lowercase : 10}}</p>
+                        <p class="lead text-left">Correo: {{" "+contacto.correo | lowercase}}</p>
+                        <p class="lead text-left">Asunto: {{" "+contacto.asunto | lowercase}}</p>
+                        <p class="lead text-left">Comentario/sugerencia: {{"Confidencial" | uppercase}}</p>
+                    </div>
+                </div>
+                <hr>
+                
+
+            </form>
+            <br>
+
+
+
+        </div>
+    </div>
+    <hr>
+</div>

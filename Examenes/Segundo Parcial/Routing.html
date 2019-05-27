@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head ng-controller="ControlTitulo">
+    <meta name="viewport" content="initial-scale=1" charset="utf-8">
+    <title>Pizza Hut Express | {{page_title}} </title>
+    <link rel="shortcut icon" href="src/pizza-icono.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.js"></script>
+    <script src="js/AngularEvents.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Principal.css">
+
+
+
+</head>
+
+<body ng-controller="PrincipalController">
+
+    <header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-7 offset-5">
+                    <br>
+                    <img src="src/Logo.png" class="img-fluid" alt="" width="22%">
+                    <br>
+                    <br>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-toggleable-md navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#/!">HOME</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mr-auto ml-auto text-center">
+                    <!-- El centrado de navbar -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!Menu'">Menú </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!Orden-online">Orden Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!Sucursales">Sucursales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!Acerca-de">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!Contacto">Contacto</a>
+                    </li>
+                </ul>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <a href="https://twitter.com/pizzahut" class="btn btn-outline-danger mr-2"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/PizzaHut" class="btn btn-outline-danger mr-2"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.youtube.com/user/pizzahut" class="btn btn-outline-danger mr-2"><i class="fab fa-youtube"></i></a>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="main">
+        <!-- Aqui es donde se hacer el cambio -->
+        <div ng-view></div>
+
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-6 col-sm-6 col-md-3">
+                    <br>
+                    <ul ng-repeat="salida in ayuda">
+                        <b><li class="tituloList mb-1">{{salida.titulo | uppercase}}</li></b>
+                        <li class="ElementList mb-1" ng-repeat="salida2 in salida.servicios">
+                        {{salida2.serv}}
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-6 col-sm-6 col-md-3">
+                    <br>
+                    <ul ng-repeat="salida in legal">
+                        <b><li class="tituloList mb-1">{{salida.titulo | uppercase}}</li></b>
+                        <li class="ElementList mb-1" ng-repeat="salida2 in salida.servicios">
+                        {{salida2.serv}}
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <br>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="restric mb-0">Las imagenes son de carácter ilustrativo. Área de entrega limitada. Nuestros respartidores no llevan más de $200 pesos en cambio. Los precios varian</p>
+                    <p class="restric mb-0">unidad en unidad y en servicio a domicilio sin previo aviso. Sujeto a Disponibilidad. Consulta nuestro aviso de privacidad</p>
+                    <p class="restric mb-0">COCA-COLA es una marca registrada de The Coca-Cola Company. D.R © The Coca-Cola Company. 2019</p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="copyright">{{copyright | uppercase}}</p>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <!-- Bootstrap librerias-->
+    <!--css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--js / jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
